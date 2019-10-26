@@ -62,11 +62,13 @@ VirtualSerialPort.prototype.write = function write(buffer, callback) {
             }.bind(this)
         );
     }
+    /*
     // This callback should receive both an error and result, however result is
     // undocumented so I do not know what it should contain
     if (callback) {
         return callback();
     }
+    */
 };
 
 VirtualSerialPort.prototype.pause = function pause() {};
